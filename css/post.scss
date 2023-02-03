@@ -1,0 +1,45 @@
+.post {
+  background-color: white;
+  max-width: 418px;
+  border-radius: 4px;
+  margin-bottom: 32px;
+  @include onPhone{
+    max-width: 354px;
+    margin: 0 10px 17px 11px;
+  }
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 38px;
+    padding: 24px 21px 17px 23px;
+    @include onPhone{
+      font-size: 22px;
+    }
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 0 21px 11px 23px;
+    gap: 70px;
+    @include onPhone{
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  &__text {
+    line-height: 24px;
+    padding: 0 27px 30px 23px;
+  }
+  &__date{
+    &:before {
+      content: '';
+      position: relative;
+      display: inline-block;
+      left: 130px;
+      height: 21px;
+      border: 1px solid #000000;
+    }
+  }
+}

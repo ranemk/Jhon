@@ -1,0 +1,22 @@
+.footer {
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px ;
+    margin-top: 115px;
+    @include onPhone{
+      padding-top: 51px;
+    }
+  }
+  &__img {
+  }
+  &__copyrights {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    margin-top: 26px;
+    padding-bottom: 54px;
+  }
+}

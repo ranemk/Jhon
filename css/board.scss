@@ -1,0 +1,103 @@
+.board {
+  display: flex;
+  position: relative;
+  @include onPhone {
+    &:after {
+      content: '';
+      height: 1px;
+      width: 858px;
+      position: absolute;
+      background-color: #E0E0E0;
+      top: 210px;
+    }
+    &:nth-of-type(3n) {
+      display: none;
+    }
+    &:nth-of-type(2n) {
+      display: none;
+    }
+  }
+  @include onPhone {
+    flex-direction: column;
+  }
+
+  &:after {
+    content: '';
+    height: 1px;
+    width: 858px;
+    position: absolute;
+    background-color: #E0E0E0;
+    top: 210px;
+    @include onPhone {
+      display: none;
+    }
+  }
+
+  &__image {
+    @include onPhone {
+      margin: 0 18px 17px 18px;
+      img {
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+
+  }
+
+  &__content {
+    position: relative;
+    margin-left: 18px;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 44px;
+    margin: 0 21px 17px 0;
+    @include onPhone {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 16px;
+      padding: 0;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 26px;
+    gap: 26px;
+    margin-bottom: 17px;
+    @include onPhone {
+      padding: 0px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__text {
+    line-height: 24px;
+    margin: 0 27px 30px 0;
+    @include onPhone {
+      padding: 0px;
+      margin: 0 13px 0 0;
+    }
+  }
+
+  &__date {
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    @include onPhone {
+      font-size: 16px;
+    }
+  }
+
+  &__type {
+    color: #8695A4;
+    @include onPhone {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

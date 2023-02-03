@@ -1,0 +1,27 @@
+.header {
+  &__nav {
+    margin: 27px 60px 158px 0;
+    @include onPhone{
+      margin-bottom: 33px;
+    }
+  }
+  &__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 33px;
+    @include onPhone{
+      margin-bottom: 33px;
+    }
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    transition: 0.3s;
+    &:hover{
+      color: violet;
+    }
+  }
+}
+

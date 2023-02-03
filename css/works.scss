@@ -1,0 +1,18 @@
+.works {
+
+  &__row {
+    margin-bottom: 46px;
+  }
+  &__title {
+    line-height: 60px;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 22px;
+    @include onPhone{
+      display: flex;
+      justify-content: center;
+      font-size: 18px;
+      margin: 3px 0 2px 0;
+    }
+  }
+}

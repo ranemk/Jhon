@@ -1,0 +1,68 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  @include onPhone{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  &__text {
+    @include onPhone {
+    }
+  }
+  &__title {
+    font-size: 44px;
+    line-height: 60px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    @include onPhone{
+      font-size: 32px;
+      line-height: 40px;
+      text-align: center;
+      margin: 34px 23px 21px 24px;
+      max-width: 312px;
+    }
+  }
+  &__subtitle {
+    line-height: 24px;
+    color: #21243D;
+    margin-bottom: 38px;
+    max-width: 497px;
+    @include onPhone{
+      text-align: center;
+      line-height: 23.5px;
+      margin: 0 23px 27px 24px;
+    }
+  }
+  &__button {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    margin-bottom: 80px;
+    @include onPhone{
+      margin: 0 83px 58px 84px;
+      max-width: 208px;
+    }
+  }
+  &__link {
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    @include onPhone{
+      font-weight: 500;
+      font-size: 19px;
+      line-height: 29px;
+    }
+  }
+  &__image {
+    @include onPhone{
+      align-self: center;
+      max-width: 175px;
+
+    }
+    img {
+      object-fit: contain;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
